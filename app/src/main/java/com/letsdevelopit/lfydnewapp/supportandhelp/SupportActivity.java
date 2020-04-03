@@ -3,10 +3,13 @@ package com.letsdevelopit.lfydnewapp.supportandhelp;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
+import android.content.ActivityNotFoundException;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.freshchat.consumer.sdk.Freshchat;
 import com.freshchat.consumer.sdk.FreshchatConfig;
@@ -26,7 +29,7 @@ public class SupportActivity extends AppCompatActivity {
     private TabLayout tabLayout;
     private ViewPager viewPager;
 
-    Button btn;
+    Button btn,email,phonenumber;;
 
     FirebaseDatabase database = FirebaseDatabase.getInstance();
     DatabaseReference mref = database.getReference();
@@ -41,8 +44,37 @@ public class SupportActivity extends AppCompatActivity {
 
 
         btn = findViewById(R.id.button);
+        email=findViewById(R.id.emailsupport);
+        phonenumber=findViewById(R.id.phonedial);
 
         uid = userc.getUid();
+
+        phonenumber.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+
+
+
+                Intent intent = new Intent(Intent.ACTION_DIAL).setData(Uri.parse("tel: +919031716589"));
+                startActivity(intent);
+            }
+        });
+
+        email.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                try{
+                    Intent intent = new Intent (Intent.ACTION_VIEW , Uri.parse("mailto:" + "support@lfyd.in"));
+
+                    startActivity(intent);
+                }catch(ActivityNotFoundException e){
+                    Toast.makeText(SupportActivity.this, "Gmail Not Found ", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override

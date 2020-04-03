@@ -20,7 +20,7 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/colorPrimaryDark"
+            android:background="#08195e"
             android:padding="10dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -51,12 +51,13 @@
                         android:drawableTop="@drawable/ic_person_black_24dp" />
 
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="140dp"
                         android:layout_height="wrap_content"
                         android:layout_centerHorizontal="true"
                         android:gravity="center"
                         android:layout_margin="5dp"
-                        android:text="LFYD"
+                        android:fontFamily="@font/racingsans"
+                        android:text="Lfyd"
                         android:textStyle="bold"
                         android:textColor="#fff"
                         android:textSize="35sp" />
@@ -67,9 +68,12 @@
                         android:id="@+id/city"
                         android:text="City"
                         android:textColor="#fff"
+                        android:maxLines="1"
+                        android:marqueeRepeatLimit="marquee_forever"
                         android:textAlignment="center"
                         android:layout_marginLeft="2dp"
                         android:textSize="14sp"
+                        android:maxLength="15"
                         android:layout_centerVertical="true"
                         android:drawableTop="@drawable/ic_location"
                         android:layout_alignParentStart="true"
@@ -97,7 +101,7 @@
                         android:drawableLeft="@drawable/ic_search_black_24dp"
                         android:ems="10"
                         android:gravity="center"
-                        android:hint="LFYD Search" />
+                        android:hint="How may we help You Today" />
 
                 </LinearLayout>
 
@@ -145,64 +149,80 @@
             app:strokeColor="#FF777777"
             app:strokeWidth="1dp"/>
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your Account"
+            android:textColor="#373737"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/overpasssemibold"
+            android:textSize="20sp"
+            android:layout_marginLeft="10dp"
+            app:layout_constraintTop_toBottomOf="@id/carouselView"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:id="@+id/youraccountlabel"/>
 
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@+id/carouselView"
+            app:layout_constraintTop_toBottomOf="@+id/youraccountlabel"
             android:id="@+id/myshops"
             android:weightSum="3"
-            android:layout_marginTop="2dp"
+            android:layout_marginTop="0dp"
             android:orientation="horizontal"
             >
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:backgroundTint="#fff"
-            android:layout_weight="1"
-            android:id="@+id/myshop"
-            android:layout_margin="5dp"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            app:cardCornerRadius="20dp">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="135dp"
-                android:orientation="vertical">
-            <ImageView
-                android:layout_width="131dp"
-                android:layout_height="95dp"
-                android:padding="20dp"
-                android:src="@drawable/ic_shop"
-                android:scaleType="centerCrop" />
-
-            <TextView
-                android:layout_width="130dp"
-                android:layout_height="wrap_content"
-                android:text="My Shop "
-                android:padding="10dp"
-                android:textAlignment="center"
-                android:textColor="#000"
-                android:drawableRight="@drawable/ic_keyboard_arrow_profile"/>
-
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:backgroundTint="#fff"
                 android:layout_weight="1"
-                android:layout_margin="5dp"
-                android:id="@+id/transaction"
+                android:id="@+id/myshop"
+                android:layout_margin="0dp"
                 android:layout_alignParentTop="true"
                 android:layout_centerHorizontal="true"
-                app:cardCornerRadius="20dp">
+                app:cardCornerRadius="0dp">
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="135dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="131dp"
+                        android:layout_height="95dp"
+                        android:padding="20dp"
+                        android:src="@drawable/ic_shop"
+                        android:scaleType="centerCrop" />
+
+                    <TextView
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="My Shop "
+                        android:padding="10dp"
+                        android:fontFamily="@font/overpasssemibold"
+                        android:textAlignment="center"
+                        android:textColor="#373737"
+                        android:drawableRight="@drawable/ic_keyboard_arrow_profile"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#fff"
+                android:layout_weight="1"
+                android:layout_margin="0dp"
+                android:id="@+id/transaction"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                app:cardCornerRadius="0dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="135dp"
+                    android:background="?android:attr/selectableItemBackground"
                     android:orientation="vertical">
                     <ImageView
                         android:layout_width="131dp"
@@ -216,8 +236,9 @@
                         android:layout_height="wrap_content"
                         android:text="Transactions"
                         android:padding="10dp"
+                        android:fontFamily="@font/overpasssemibold"
                         android:textAlignment="center"
-                        android:textColor="#000"
+                        android:textColor="#373737"
                         android:drawableRight="@drawable/ic_keyboard_arrow_profile"/>
 
                 </LinearLayout>
@@ -228,10 +249,10 @@
                 android:backgroundTint="#fff"
                 android:layout_weight="1"
                 android:id="@+id/offers"
-                android:layout_margin="5dp"
+                android:layout_margin="0dp"
                 android:layout_alignParentTop="true"
                 android:layout_centerHorizontal="true"
-                app:cardCornerRadius="20dp">
+                app:cardCornerRadius="0dp">
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="135dp"
@@ -248,8 +269,9 @@
                         android:layout_height="wrap_content"
                         android:text="Offers"
                         android:padding="10dp"
+                        android:fontFamily="@font/overpasssemibold"
                         android:textAlignment="center"
-                        android:textColor="#000"
+                        android:textColor="#373737"
                         android:drawableRight="@drawable/ic_keyboard_arrow_profile"/>
 
                 </LinearLayout>
@@ -261,12 +283,12 @@
             android:id="@+id/business"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
             android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/overpasssemibold"
             android:text="Business Types"
+            android:layout_marginLeft="10dp"
+            android:textColor="#373737"
             android:textSize="20sp"
-            android:textColor="#000"
             app:layout_constraintTop_toBottomOf="@+id/myshops"
             tools:layout_editor_absoluteX="0dp" />
 
