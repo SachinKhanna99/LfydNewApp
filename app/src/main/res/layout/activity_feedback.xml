@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFEFE"
+    tools:context=".Feed.ActivityFeedback"
+    >
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:textSize="18sp"
+    android:textStyle="bold"
+    android:textColor="@android:color/black"
+    android:fontFamily="sans-serif-condensed-medium"
+    android:text="We Love to Hear From our family"
+    android:textAlignment="center"/>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_marginTop="100dp"
+        android:elevation="50dp"
+        android:background="#E6E4E4"
+        app:cardCornerRadius="40dp"
+        android:id="@+id/feedbackcard"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp" >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@android:color/black"
+            android:textAlignment="center"
+            android:text="Feel Free to share AnyThing with us ☺"/>
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="28dp"
+
+            android:textColor="#181616"
+            android:id="@+id/writemail"
+            android:hint="Tell us how  can we improve ourselves "
+            android:textAlignment="center"
+            android:layout_marginTop="30dp" />
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="170dp"
+            android:layout_marginLeft="120dp"
+            android:id="@+id/submit"
+            android:text="submit"
+            style="@style/Widget.AppCompat.Button.Borderless"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="370dp"
+        android:elevation="50dp"
+        android:id="@+id/callcard"
+        android:background="#E6E4E4"
+        app:cardCornerRadius="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp" >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:text="If You want you can directly give us a call"/>
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:text="Call"
+            android:textStyle="bold"
+            android:id="@+id/call"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="50dp"/>
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"
+        android:id="@+id/aftersubmit"
+        android:text="Your Feedback is precious for us we try to implement as soon as possible .Thank You"/>
+</RelativeLayout>

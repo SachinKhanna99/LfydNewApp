@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".ui.qrscanner.PaymentActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_margin="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pay To :"
+            android:textSize="23sp"
+            android:textColor="#000"
+            android:padding="20dp"/>
+
+        <TextView
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="id"
+            android:id="@+id/upiid"
+            android:textSize="23sp"
+            android:textColor="#f7c91c"
+            android:padding="20dp"/>
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/card_back"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:id="@+id/amt"
+                android:background="@drawable/rounded_edit"
+                android:hint="Enter The Amount"
+                android:inputType="number"
+                android:padding="20dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textColorHint="#000" />
+
+
+
+
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:id="@+id/usecoin"
+                android:text=" Want to use LFYD Coins"
+                android:textColor="#fff"
+                android:buttonTint="#fff"
+                android:textSize="18sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:id="@+id/coinll"
+                        android:visibility="gone"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="LFYD Coins You can use:"
+                            android:textSize="20sp"
+                            android:textColor="#fff"
+                            android:padding="20dp"/>
+
+                        <TextView
+                            android:layout_weight="2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="id"
+                            android:id="@+id/coinuse"
+                            android:textSize="23sp"
+                            android:textColor="#f7c91c"
+                            android:padding="20dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:id="@+id/amtll"
+                        android:visibility="gone"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Final Amount to Pay :"
+                            android:textSize="20sp"
+                            android:textColor="#fff"
+                            android:padding="20dp"/>
+
+                        <TextView
+                            android:layout_weight="2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="id"
+                            android:id="@+id/finalamount"
+                            android:textSize="23sp"
+                            android:textColor="#f7c91c"
+                            android:padding="20dp"/>
+                    </LinearLayout>
+                    <Button
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/rounded_btn"
+                        android:padding="13dp"
+                        android:text="Pay"
+                        android:id="@+id/pay"
+                        android:layout_marginTop="30dp"
+                        android:textColor="#fff"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+            </ScrollView>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

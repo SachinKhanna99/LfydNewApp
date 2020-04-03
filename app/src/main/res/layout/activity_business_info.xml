@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileSection.BusinessInfo.BusinessInfoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:padding="5dp"
+            android:gravity="right"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EDIT"
+                android:id="@+id/edit"
+                android:textSize="15sp"
+                android:textColor="#fff"
+                android:background="@drawable/rounded_btn"/>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Shop Name"
+                android:layout_margin="5dp"
+                android:background="@drawable/rounded_edit"
+                android:padding="10dp"
+                android:id="@+id/shop_name"
+                android:drawablePadding="20dp"
+                android:drawableLeft="@drawable/ic_business_black_24dp"
+                android:textColor="#333"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Phone Number"
+                android:background="@drawable/rounded_edit"
+                android:padding="10dp"
+                android:layout_margin="5dp"
+                android:id="@+id/shop_num"
+                android:drawablePadding="20dp"
+                android:drawableLeft="@drawable/ic_local_phone_black_24dp"
+                android:textColor="#333"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Discount"
+                android:background="@drawable/rounded_edit"
+                android:padding="10dp"
+                android:layout_margin="5dp"
+                android:id="@+id/shop_discount"
+                android:drawablePadding="20dp"
+                android:drawableLeft="@drawable/ic_sale"
+                android:textColor="#333"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Business Type"
+                android:background="@drawable/rounded_edit"
+                android:padding="10dp"
+                android:layout_margin="5dp"
+                android:id="@+id/shop_type"
+                android:drawablePadding="20dp"
+                android:drawableLeft="@drawable/ic_business_black_24dp"
+                android:textColor="#333"/>
+
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Address"-->
+<!--                android:layout_margin="5dp"-->
+
+<!--                android:background="@drawable/rounded_edit"-->
+<!--                android:padding="10dp"-->
+<!--                android:drawablePadding="20dp"-->
+<!--                android:drawableLeft="@drawable/ic_location_on_black_24dp"-->
+<!--                android:textColor="#333"/>-->
+
+
+
+                <LinearLayout
+                    android:background="@drawable/rounded_edit"
+                    android:layout_width="match_parent"
+                    android:padding="10dp"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Shop Images"
+                        android:textSize="16sp"/>
+
+                    <LinearLayout
+                        android:background="@drawable/rounded_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:orientation="horizontal"
+                        android:weightSum="4">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dp"
+                            android:id="@+id/imgvmain"
+                            android:src="@drawable/avtar"
+                            android:layout_weight="1"
+                            />
+                    <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dp"
+                            android:id="@+id/imgv1"
+                            android:src="@drawable/avtar"
+                            android:layout_weight="1"
+                            />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/avtar"
+                        android:id="@+id/imgv2"
+
+                        android:layout_weight="1"
+
+                        />
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/avtar"
+                        android:id="@+id/imgv3"
+
+                        android:layout_weight="1"
+                        />
+                </LinearLayout>
+                </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

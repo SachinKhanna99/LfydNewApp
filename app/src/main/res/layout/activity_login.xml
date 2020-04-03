@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Login.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:src="@drawable/lfyd"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:weightSum="2"-->
+<!--            android:layout_height="wrap_content">-->
+<!--            -->
+<!--           <-->
+<!--        </LinearLayout>-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phone Authentication"
+            android:textStyle="bold"
+            android:padding="5dp"
+
+            android:layout_marginTop="30dp"
+            android:textSize="25sp"
+            android:textColor="#000"
+            android:textAlignment="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="30dp"
+            android:padding="14dp"
+
+            android:id="@+id/phonell"
+            android:visibility="visible"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/data"
+                android:weightSum="3"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:orientation="horizontal">
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_edit"
+                    android:padding="15dp"
+                    android:textColor="#000"
+                    android:editable="false"
+                    android:textSize="18sp"
+                    android:text="+91"
+                    tools:ignore="HardcodedText"
+                    android:autofillHints="" />
+                <EditText
+                    android:id="@+id/etphone"
+                    android:layout_width="wrap_content"
+
+                    android:clickable="true"
+                    android:padding="15dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_edit"
+                    android:textSize="18sp"
+                    android:textColor="#000"
+                    android:hint="Enter 10 Digit Phone Number."
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:textAlignment="center"
+                    tools:ignore="Autofill,HardcodedText,TextFields"
+                    android:focusable="true" />
+            </LinearLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Send Otp"
+                android:background="@drawable/rounded_btn"
+                android:textColor="#fff"
+                android:id="@+id/sendotp"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="right"/>
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/etotp"
+                    android:layout_width="wrap_content"
+
+                    android:clickable="true"
+                    android:padding="15dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_edit"
+                    android:textSize="18sp"
+                    android:textColor="#000"
+                    android:hint="Enter OTP."
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:textAlignment="center"
+                    tools:ignore="Autofill,HardcodedText,TextFields"
+                    android:focusable="true" />
+            </LinearLayout>
+
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/ic_arrow_forward_black_24dp"
+                android:id="@+id/checkotp"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center"/>
+
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:id="@+id/progressbar"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"/>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

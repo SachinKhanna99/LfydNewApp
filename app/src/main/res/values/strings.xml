@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Lfyd Merchant</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_wallet">Wallet</string>
+    <string name="name_of_company">Name Of Company</string>
+    <string name="search_for_city_or_location">Search for City or Location..</string>
+    <string name="name">NAME</string>
+    <string name="wallet_cash">LFYD Money = ₹</string>
+    <string name="wallet_coin">LFYD Coins = </string>
+
+    <string name="menu_home">LFYD</string>
+    <string name="language">Change Language</string>
+    <string name="chat">Chat with Us</string>
+    <string name="feedback">Feedback</string>
+    <string name="help">Support/Help</string>
+
+    <string name="wallet">Wallets</string>
+    <string name="promote">Business Offers</string>
+    <string name="wallet1">Wallet 1</string>
+    <string name="wallet2">Wallet 2</string>
+    <string name="business">Business</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="refer">Refer and Earn!</string>
+
+    <string name="rate">Rate Us!</string>
+    <string name="privacy">Privacy and Policy</string>
+    <string name="scan_qr">Scan QR</string>
+
+
+    <string name="care"><b>Contact our Customer Care</b></string>
+    <string name="no"><b>+91 8149527784</b></string>
+    <string name="emailtext"><b>Or you can also send us an Email</b></string>
+    <string name="mail"><b>mmayuresh12@gmail.com</b></string>
+
+    <string name="live_text"><b>More Issues?...Chat with us! (9 AM to 9 PM)</b></string>
+    <string name="live"><b>Live Chat</b></string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string name="freshchat_file_provider_authority">com.example.demoapp.provider</string>
+
+</resources>

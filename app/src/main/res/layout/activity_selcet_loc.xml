@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".SelcetLocActivity">
+
+
+
+
+    <AutoCompleteTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:padding="15dp"
+        android:textSize="18sp"
+        android:textColor="#000"
+        android:background="@drawable/rounded_edit"
+        android:textAlignment="center"
+        android:drawableLeft="@drawable/ic_search_black_24dp"
+        android:drawableRight="@drawable/ic_location_on_black_24dp"
+        android:hint="Search Your City"
+        android:id="@+id/citysearch"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  Use Location"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/ic_my_location_black_24dp"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:id="@+id/loc"/>
+
+</LinearLayout>
